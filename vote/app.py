@@ -27,8 +27,9 @@ def hello():
     if request.method == 'POST':
         redis = get_redis()
         vote = request.form['vote']
-        data = json.dumps({'voter_id': voter_id, 'vote': vote})
-        redis.rpush('votes', data)
+        # cause I love bugs :|
+        #data = json.dumps({'voter_id': voter_id, 'vote': vote})
+        #redis.rpush('votes', data)
 
     resp = make_response(render_template(
         'index.html',
