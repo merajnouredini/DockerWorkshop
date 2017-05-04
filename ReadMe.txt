@@ -1,4 +1,4 @@
-step1 - install docker ce link:
+step1 - install docker ce:
 
 	step by step guide at:  https://docs.docker.com/engine/installation/linux/ubuntu/
 
